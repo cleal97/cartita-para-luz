@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Especial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fondo con corazones -->
+    <div class="fondo-corazones" id="fondo-corazones"></div>
+
+    <div class="container">
+        <!-- Sobre -->
+        <div class="sobre" onclick="abrirCarta()">
+            <img src="img/sobre.png" alt="Sobre">
+        </div>
+
+        <!-- Carta (oculta inicialmente) -->
+        <div class="carta" id="carta">
+            <div class="contenido-carta">
+                <h1>Querida Luz,</h1>
+                <p>Lamento mucho, muchísimo, un montón todo el dolor que estás sintiendo. No quiero que te sientas así por mi culpa, y me duele saber que te hice sentir desvalorizada, no correspondida y agotada. No debería haber sido así para nada de verdad, y entiendo lo frustrante y angustiante que fue para vos.</p>
+                <p>Te escucho, y sé que sentís que siempre fuiste la que dio más, la que sostuvo la relación, la que intentó arreglar todo mientras yo no hacía lo suficiente. Sé que te sentís desgastada, herida y con el corazón roto porque querías algo recíproco y no lo encontraste conmigo…</p>
+                <p>No quiero invalidar nada de lo que decís, porque si lo sentís, es por algo y es importante. No quiero que pienses que lo que diste no tuvo valor o que no significas nada para mí. Sé que todo esto te hace pensar que nunca te amé, pero te prometo que por mi vieja que no es así. Y lamento mucho que mis acciones no hayan sido suficientes para demostrártelo o fueron contrarias…</p>
+                <p>Es verdad pasaste por mucho muchos años, peleaste con muchas cosas y saliste adelante convirtiéndote en lo que sos hoy en día, una mujer de la que estuve y estoy muy orgulloso siempre.</p>
+                <p>Lamento de corazón también que te sientas la mujer del proceso… te digo algo, todas mis relaciones pasaron, todas esas fueron un proceso para llegar a vos, sos la mujer de mi vida, todo lo que quiero y quise sin haberlo sabido ni esperado, sos la que toco desde lo más profundo de mi corazón como nunca nadie logró hacerlo, sos la que me movió todo el cerebro y dio vuelta todo mi mundo, sos la única razón por la que quisiera ser mejor persona, sos TODO. De verdad, pero de verdad de verdad de verdad de verdad gritándolo y todo TE AMO…</p>
+                <p>Todo fue mi culpa… todo por mi puta inseguridad, esa que me hace cerrarme y no poder decir ni hacer las cosas que realmente quiero compartir con vos, por un miedo pelotudo que tengo. Cuando no me respondes como yo espero, ya malinterpreto todo y siento que no me querés, cuando en realidad tenés tus formas de mostrarme el amor. Lo de anoche fue mi culpa, hacer una boludez por mi inseguridad y sentirme “herido”, pensando que ya no te intereso, que preferís a otros antes que a mí. También esta mañana, cuando te hablé por Instagram después de que me bloquearas en Wpp, haciéndote sentir que solo me doy importancia yo y no a vos cuando me habías escrito desde tu interior todo lo de wpp, cuando juro por mi vieja que sos lo más importante para mí, aunque no lo sientas así. Perdón por todo, en serio… Mi baja autoestima armó un círculo negativo y distante que hizo que pasara esto cuando no quería que fuera así. Mi mayor error fue no saber comunicarme, decir las cosas mal o hacer pelotudeces, cuando lo que tendría que haber hecho es decirte: “Che, amor, cuando puedas, ¿podemos hablar de algo que me genera inseguridad? Sé que no lo haces con mala intención y que no sos mala, pero me gustaría contártelo para sacármelo de adentro, si no te molesta, obvio.” Tendría que haber sido más respetuoso, tranquilo y paciente, e intentar abrir la comunicación sin que te sientas atacada, que es lo último que quiero que sientas.</p>
+                <p>No quiero que todo termine con este dolor tan grande para vos. Quiero seguir escuchándote de verdad y seguir entendiendo qué es lo que necesitas en todo momento. Sé que me diste 1, 2, 3, 4, 5, 6, 20 oportunidades y las cagué, pero de corazón, de rodillas, de la forma que sea siendo vos la mujer de mi vida entera, la única que quiero en el universo y por la que en serio daría y seguiría dando todo de mí hasta el fin de los tiempos, siendo que no te quiero perder de verdad, si hay una manera de sanar esto y poder seguir amándote hasta el punto que lo vuelvas a sentir de vuelta como realmente te mereces, quiero hacerlo.</p>
+                <p class="firma">Con mucho Amor y cariño,<br>Carlos.</p>
+
+                <!-- Pregunta final -->
+                <div class="pregunta">
+                    <p>¿Te gustaría seguir teniendo este vínculo hermoso, único y especial que tenemos juntos?</p>
+                    <div class="botones">
+                        <button onclick="respuestaSi()">Sí</button>
+                        <button id="btnNo" onmouseover="moverBoton()">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio de fondo -->
+    <audio autoplay loop muted id="audio">
+        <source src="sound/reason.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
