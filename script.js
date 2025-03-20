@@ -17,7 +17,7 @@ function enviarEleccion(eleccion) {
 }
 
 function respuestaSi() {
-    alert("¡Gracias por decir que sí! 💖");
+    alert(""¡Gracias por decir que sí! Te amo mas de lo que las propias palabras puedan expresas, en serio... Sos el amor de mi vida por siempre y para siempre. 💖");
     enviarEleccion("Sí"); // Enviar elección al servidor
 }
 
